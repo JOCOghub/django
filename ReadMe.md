@@ -7,3 +7,17 @@ Activate the Virtual Environment 2. source myenv/bin/activate
 3. pip install django
 
 verify: python -m django --version
+
+4. make new app :`python3 manage.py startapp <app_name>`
+
+5. Register the New App
+Open your settings.py file.
+Add the new app to the INSTALLED_APPS list:
+python
+Copy code
+INSTALLED_APPS = [
+    # other apps...
+    'blog',  # Add your new app here
+]
+CD to the same folder as the manage.py file then...
+6. Run `python3 manage.py runserver`
